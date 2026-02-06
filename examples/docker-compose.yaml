@@ -67,3 +67,6 @@ services:
         target: /domain
     stdin_open: true
     tty: true
+    # Added Port 5000 for SRT output (if using the mxl-gst-sink plugin to send SRT streams from the reader).
+    ports:
+      - "5000:5000/udp"
